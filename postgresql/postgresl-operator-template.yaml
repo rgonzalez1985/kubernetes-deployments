@@ -102,6 +102,7 @@ spec:
       locale: "en_US.UTF-8"
       data-checksums: "true"
     pg_hba:
+    - host    all             all                0.0.0.0/0          md5
     - local   all             all                                   trust
     - hostssl all             +zalandos    127.0.0.1/32       pam
     - host    all             all                127.0.0.1/32       md5
@@ -113,7 +114,6 @@ spec:
     - hostnossl all           all                all                reject
     - hostssl all             +zalandos    all                pam
     - hostssl all             all                all                md5
-    - host    all             all                all                md5
 #    slots:
 #      permanent_physical_1:
 #        type: physical
