@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ubuntu
+  namespace: default
+spec:
+  containers:
+  - image: ubuntu
+    name: ubuntu
+    command:
+      - tail
+      - "-f"
+      - "/dev/null"
+    imagePullPolicy: IfNotPresent
+  restartPolicy: Always
