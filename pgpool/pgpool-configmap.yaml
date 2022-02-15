@@ -32,6 +32,7 @@ data:
     client_idle_limit = 0
     connection_cache = on
     load_balance_mode = on
+    replicate_select = on
     ssl = off
     failover_on_backend_error = off
   pool_hba.conf: |-
